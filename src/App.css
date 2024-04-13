@@ -120,15 +120,19 @@
     body {
         height: auto;
     }
+    .info-card{
+        position: relative;
+  left: -40px;
 
+    }
     .App>div {
         flex-direction: row-reverse;
     }
 
     .menu {
         order: 2;
-        left: -40px;
-        position: relative;
+        position: fixed;
+  left: 25px;
     }
 
     .content {
