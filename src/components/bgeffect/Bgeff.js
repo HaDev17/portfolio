@@ -55,8 +55,6 @@ function Bgeff() {
             creatInterval = setInterval(createNewParticle, 400);
             funLimitCalling = setTimeout(() => {
                 clearInterval(creatInterval)
-                //delet all particles
-                console.log("cleared", particles)
                 particles.forEach(particle => {
                     particle.item.remove();
                 });

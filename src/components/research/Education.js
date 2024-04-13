@@ -3,7 +3,7 @@ import EducationItem from './EducationItem'
 function Education() {
   return (
     <div className='edu-section'>
-      <h4>EDUCATION</h4>
+      <h4 className='mb-4'>EDUCATION</h4>
       <div className='edu-content row justify-content-center'>
         <div className='line'>
         </div>

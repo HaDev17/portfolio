@@ -6,7 +6,7 @@ import img from '../../images/photo.png'
 import './Infocard.css'
 function infoCard() {
   return (
-    <div className='info-card col-10 col-sm-9 col-lg-4 col-md-6 p-0 me-2'>
+    <div className='info-card col-9 col-sm-9 col-lg-4 col-md-6 p-0 me-2'>
       <div className='image-slider'>
         <Images />
       </div>

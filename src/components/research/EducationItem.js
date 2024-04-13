@@ -2,7 +2,7 @@ import React from 'react'
 
 function EducationItem(props) {
   return (
-    <div className='education-item mt-4 p-0 ps-2'>
+    <div className='education-item  p-0 ps-2'>
           <span className='circle'></span>
         <h4>{props.date}</h4>
         <p className='text-white'>{props.level}</p>

@@ -1,8 +1,6 @@
 import React from 'react'
 import PublicationItem from './PublicationItem'
 function Publications() {
-
-  // console.log(sumfields)
   return (
     <div className='publications'>
       <h4>PUBLICATIONS</h4>

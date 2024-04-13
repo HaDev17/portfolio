@@ -11,7 +11,7 @@ function Images() {
     useEffect(() => {
         const timer = setInterval(() => {
           setCurrentImagIdx((currentImageIdx + 1) % images.length);
-        }, 7000); // change image every 2 seconds
+        }, 11000); // change image every 2 seconds
     
         return () => {
           clearInterval(timer);

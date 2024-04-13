@@ -12,7 +12,7 @@ function App() {
       <div className='row'>
       <Menu />
       <Infocard />
-      <div className='content col-11 col-sm-10 col-lg-6 col-md-8 h-100 p-0'>
+      <div className='content col-10 col-sm-10 col-lg-6 col-md-8 h-100 p-0'>
         <About />
         <Research />
         <Teaching /> 
