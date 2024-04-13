@@ -12,7 +12,7 @@ function Education() {
           <EducationItem date='2010-2013' level="Bachelor's in Fundamental Mathematics." univercity='University Ferhat Abbas of Setif, Setif, Algeria.' />
 
         </div>
-        <div className='col-12 col-md-6 row p-0 ps-4 mt-5 align-items-end edu-3'>
+        <div className='col-12 col-md-6 row p-0 ps-4 align-items-end edu-3'>
           <EducationItem date='2013-2015' level='Master in Arithmetic Coding and Combinatorial' univercity='University of science and technology Houari Boumediene, Algiers, Algeria' title='Prime Numbers.' supervisor='Bouchenna Rachid.' />
         </div>
 
