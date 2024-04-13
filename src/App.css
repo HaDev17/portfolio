@@ -1,0 +1,253 @@
+.App>div {
+    height: 600px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: var(--secandary-color);
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* .content {
+    scroll-behavior: smooth;
+    background-color: var(--color-secondary);
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secandary-color) var(--text-color);
+} */
+
+.about,
+.research,
+.teaching {
+    background-color: var(--color-secondary);
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secandary-color) var(--text-color);
+    margin: 15px 0;
+    visibility: visible;
+    opacity: 1;
+    transition: none;
+}
+
+@media (min-width: 992px) {
+    .content {
+        overflow: hidden;
+        scroll-behavior: smooth;
+        /* box-shadow: 0px 0px 7px #0e0e0e; */
+        border-radius: 12px;
+    }
+
+
+
+    .about,
+    .research,
+    .teaching {
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        margin-top: 0 !important;
+    }
+
+
+}
+
+
+
+.page-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content h3 {
+    font-family: Josefin Sans;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    /* border-bottom: 1px solid ; */
+}
+
+.content h3::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: rgb(49, 49, 49);
+    background: linear-gradient(270deg, rgba(49, 49, 49, 0.35) 0%, rgb(72, 72, 72) 100%);
+}
+
+
+
+
+
+
+
+
+/*------------------------------ Res-desing------------------------------*/
+
+
+@media (min-width:767px) and (max-width:991px) {
+    body {
+        height: auto;
+    }
+
+    .App>div {
+        flex-direction: row-reverse;
+    }
+
+    .menu {
+        order: 2;
+        left: -40px;
+        position: relative;
+    }
+
+    .content {
+        position: relative;
+        left: -40px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        height: auto;
+    }
+
+    .App>div {
+        margin-top: 75px;
+    }
+
+
+
+    .content {
+        position: relative;
+        left: 0;
+    }
+
+    .menu {
+        background-color: #222222db;
+        width: 275px;
+        height: 68px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        margin: 5px 0;
+        box-shadow: 0px 0px 4px #0f0f0f;
+    }
+
+    .menu ul {
+        padding: 0 10px;
+        display: flex;
+    }
+
+    .menu ul li {
+        position: relative;
+        padding: 0 20px;
+    }
+
+    .menu ul li::before {
+        content: "";
+        width: 1px;
+        height: 68px;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        left: auto;
+        background: rgb(49, 49, 49);
+        background: linear-gradient(0deg, rgba(49, 49, 49, 0.35) 0%, rgb(72, 72, 72) 100%);
+        top: 0;
+    }
+
+
+    .content {
+        height: auto !important;
+        background: none;
+        box-shadow: none;
+
+    }
+
+    .about,
+    .research,
+    .teaching {
+        background-color: var(--color-secondary);
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .pub-item:nth-last-child(2)::before {
+        display: inline !important;
+        content: "";
+        width: 100%;
+        height: .8px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(130, 130, 130);
+        background: linear-gradient(270deg, rgba(28, 28, 28, 0) 0%, rgb(130, 130, 130) 100%);
+    }
+
+}
+
+@media (max-width: 767px) {
+    .line {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .education-item:nth-child(2) {
+        position: relative;
+        top: 210px;
+    }
+
+    .edu-3 .education-item {
+        position: relative;
+        top: -200px;
+        padding: 0 !important;
+    }
+
+    .pub-line {
+        display: none;
+    }
+
+    .publications {
+        margin-top: 60px;
+    }
+}
